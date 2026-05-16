@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중1 영어 Lesson 2 형성평가</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div id="start-screen" class="screen">
+            <h1>Lesson 2. A Delicious World</h1>
+            <h2>수업 후 형성평가</h2>
+            <p>오늘 배운 내용을 잘 이해했는지 확인해 보는 시간입니다. 집중해서 문제를 풀어보세요! (총 5문항)</p>
+            <button id="start-btn" class="btn">평가 시작하기</button>
+        </div>
+
+        <div id="quiz-screen" class="screen hide">
+            <div class="quiz-header">
+                <span id="progress">문항 1 / 5</span>
+                <div class="progress-bar-container">
+                    <div id="progress-bar"></div>
+                </div>
+            </div>
+            <div id="question-text" class="question-text">질문 내용이 여기에 들어갑니다.</div>
+            <div id="hint-box" class="hint-box hide">💡 힌트: <span id="hint-text"></span></div>
+            <button id="hint-toggle-btn" class="hint-btn">힌트 보기</button>
+            <div id="options-container" class="options-container">
+                </div>
+        </div>
+
+        <div id="result-screen" class="screen hide">
+            <h1>형성평가 결과</h1>
+            <div class="score-box">
+                <span id="score-text">0</span> / 100점
+            </div>
+            <p id="feedback-text">결과 분석 메시지가 여기에 들어갑니다.</p>
+            
+            <div class="review-container">
+                <h3>💡 오늘의 복습 가이드</h3>
+                <ul id="study-guide"></ul>
+            </div>
+
+            <div class="wrong-answers-container">
+                <h3>🔍 내가 틀린 문제 분석</h3>
+                <div id="wrong-answers-list"></div>
+                <button id="review-retry-btn" class="btn retry-wrong-btn hide">❌ 틀린 문제만 다시 도전하기</button>
+            </div>
+
+            <button id="restart-btn" class="btn" style="margin-top: 10px; background-color: #718096;">🔄 처음부터 다시 풀기</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
